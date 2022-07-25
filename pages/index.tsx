@@ -87,6 +87,9 @@ const Home: NextPage = () => {
             <p>I'm a recent computer science graduate from the University of Minnesota, if you want to learn more about me you can find my resume here. Feel free to get in contact with me through the form below.</p>
           </div>
         </div>
+        <div className={styles.experience}>
+          <img src='/second.png'/>
+        </div>
       </main>
 
       <footer className={styles.footer}>
