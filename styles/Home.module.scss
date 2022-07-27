@@ -26,6 +26,10 @@
       object-fit:cover;
   }
 
+  // .background:not([data-scroll<'1000']){
+  //   opacity: 0%;
+  // }
+
   .navbar{
       z-index: 1;
       display: flex;
@@ -140,7 +144,7 @@
       }
   }
 
-  @media (max-width:500px){
+  @media (max-width:600px){
     .linkcontainer{
         display: none;
     }
@@ -206,8 +210,12 @@
   }
 
   .about{
-    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
     width: 100%;
+    margin-bottom: 15px;
     background: rgba(39, 39, 39, 0.28);
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -223,6 +231,7 @@
       align-items: center;
       margin: 15px;
       margin-top: 50px;
+      
   }
 
   .aboutcontent h1{
@@ -242,6 +251,14 @@
     margin-top: 20px;
     border-radius: 50%;
     border: 2px solid white;
+  }
+
+  .aboutcontent a{
+    text-decoration: underline;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
   }
 
   .aboutcontent p{
@@ -267,7 +284,205 @@
         font-size: 14pt;
     }
 }
+
+@media screen and (max-width: 400px){
+  .aboutcontent p{
+      font-size: 13pt;
+  }
+}
+
+@media screen and (max-height: 720px){
+  .aboutcontent h1{
+    font-size: 10vh;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0.8em;
+  }
+  .aboutcontent img{
+    height: 120px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .aboutcontent p{
+      font-size: 11pt;
+  }
+  .aboutcontent a{
+    font-size: 11pt;
+  }
+}
+
+  .experience{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background: white;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .experienceContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 50px;
+    max-width: 1100px;
+    flex: 1;
+  }
+
+  .experience h1{
+    font-family: azo-sans-uber,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10vw;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0.8em;
+    color: black;
+    background-image: url('/Website.png');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    color: transparent;
+  }
+
+  .experience img{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+}
+
+  .experience img {
+    mix-blend-mode: lighten;
+  }
   
+  @media screen and (min-width: 1100px){
+    .experienceContent h1{
+        font-size: 82pt;
+    }
+    .experienceContent p{
+        font-size: 20pt;
+    }
+}
+
+  .expContainer{
+    height:100%;
+    width:100%;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+  .expGrid{
+    display: grid;
+    grid-template-areas: 
+    "title description";
+    grid-template-columns: 45% 55%;
+    margin-top: 0px;
+  }
+
+  .expTitle{
+    grid-area: title;
+    color: #303030;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expTitle h2{
+    margin: 0px;
+    padding: 0px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30pt;
+  }
+
+  .expTitle h3{
+    margin: 0px;
+    padding: 0px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20pt;
+  }
+
+  .expTitle h4{
+    margin: 4px;
+    padding: 0px;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:rgba(30, 30, 30, 0.4);
+    margin-bottom: -5px;
+  }
+
+  @media (max-width: 420px) {
+    .expTitle h2{
+      font-size: 25pt;
+    }
+  
+    .expTitle h3{
+      font-size: 15pt;
+    }
+  
+    .expTitle h4{
+      font-size: 12pt;
+    }
+  }
+  
+
+  .expDesc{
+    grid-area: description;
+    color: rgba(39, 39, 39, 0.80);
+    margin-top: 22px;
+    margin-left: 40px;
+    font-size: 20pt;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 600px;
+    right: 0px;
+  }
+
+  .expDesc p{
+    margin-top: 0px;
+  }
+
+  @media (max-width: 700px) {
+    .expGrid{
+      display: grid;
+      grid-template-areas: 
+      "title"
+      "description";
+      grid-template-columns: auto;
+    }
+    .expDesc{
+      margin-top: 5px;
+      margin-left: 3px;
+      font-size: 14pt;
+    }
+  }
+
+  @media  screen and (max-width: 700px) {
+    .work{
+      flex-direction: column;
+    }
+  }
+
+  .worktitle{
+    width: 100%;
+    height: 100%;
+  }
+
+  .workdescription{
+  }
+
+
   .footer a {
     display: flex;
     justify-content: center;
