@@ -26,3 +26,66 @@ a {
     background: black;
   }
 }
+
+input{
+  background-color: rgba(30,30,30, .08);
+  border: none;
+  border-radius: 5px;
+  color: rgba(39, 39, 39, 0.8);
+  height: 30px;
+  width: 100%;
+  font-size: 14pt;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input:focus{
+  outline: solid #496fa1 2px;
+}
+
+textarea{
+  background-color: white;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  color: rgba(39, 39, 39, 0.80);
+  background-color: rgba(30,30,30, .08);
+  width: 100%;
+  font-size: 14pt;
+  max-width: 100%;
+  resize: none;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+textarea:focus{
+  outline: solid #496fa1 2px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  width: 100%;
+}
+
+label{
+  color: #303030;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.c-validation{
+  background-color: red;
+}
+
+.c-error{
+  background: red;
+}

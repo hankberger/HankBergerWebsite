@@ -176,15 +176,60 @@ const Home: NextPage = () => {
             <div className={styles.socialIcons}>
               {getIcons().map((icon:{name: string, link: string, html: string}, i: number)=>{
                 return(
-                <a href={icon.link}>
-                  <div key={i} className={styles.icon} dangerouslySetInnerHTML={{__html: icon.html}}>
+                <a key={i} href={icon.link} target='_blank'>
+                  <div className={styles.icon} dangerouslySetInnerHTML={{__html: icon.html}}>
                     
                   </div>
                 </a>
                 )
               })}
+              
             </div>
+            <div className={styles.formContainer}>
+               <form>
+                 <h2>Let's work together!</h2>
+                 <div className={styles.formRow}>
+                   <div className={styles.inputData}>
+                   <label htmlFor="">Name</label>
+                     <input type="text" required/>
+                     <div className={styles.underline}></div>
+                     
+                   </div>
+                 </div>
+                 <div className={styles.formRow}>
+                   <div className={styles.inputData}>
+                      <label htmlFor="">Email</label>
+                     <input type="email" required/>
+                     <div className={styles.underline}></div>
+                     
+                   </div>
+                 </div>
+                 <div className={styles.formRow}>
+                   <div className={styles.textArea}>
+                   <label htmlFor="">Message</label>
+                     <textarea rows={8} cols={80} required></textarea>
+                     <br/>
+                     <div className={styles.underline}></div>
+                     
+                   </div>
+                 </div>
+                 <span id="submitted">Your message has been sent!</span>
+                 <div className={styles.formRow}>
+                   <button type='submit'>Send</button>
+                 </div>
+               </form>
+            </div>
+           
           </div>
+          <a href="#home">
+              <div className={styles.toTop}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+                <p>Back to Top</p>
+              </div>
+            </a>
+          <div className={styles.copyright}>© 2022 Hank Berger. All rights reserved.</div>
         </div>
       </main>
 
