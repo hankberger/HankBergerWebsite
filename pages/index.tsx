@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import getIcons from '../components/socialIcons'
 
 const Home: NextPage = () => {
   const [drawerState, setDrawer] = useState(false);
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Hank Berger | Front-end Developer</title>
         <meta name="description" content="Frontend developer and artist. Focused on delivering quality engineering alongside great design." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -146,6 +148,41 @@ const Home: NextPage = () => {
                   <p>Research Assistant for Digital Arts, Sciences, and Humanities (DASH). The main goal was to assist humanities researchers utilize technology in their research. Main tasks included data visulization using Python and website development for research teams.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div id='gallery' className={styles.gallery}>
+          <div className={styles.galleryContent}>
+              <h1>Gallery</h1>
+              <div className={styles.galleryGrid}>
+                <div className={styles.art}>
+                  <video src="/hairdance2.mp4" muted autoPlay loop/>
+                  <div className={styles.cover}>
+                    <h2>3D Art</h2>
+                  </div>
+                </div>
+                <div className={styles.aiart}>
+                <video src="/ai.mp4" muted autoPlay loop/>
+                  <div className={styles.cover}>
+                    <h2>AI Art</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id='contact' className={styles.contact}>
+          <div className={styles.contactContent}>
+            <h1>Contact Me</h1>
+            <div className={styles.socialIcons}>
+              {getIcons().map((icon:{name: string, link: string, html: string}, i: number)=>{
+                return(
+                <a href={icon.link}>
+                  <div key={i} className={styles.icon} dangerouslySetInnerHTML={{__html: icon.html}}>
+                    
+                  </div>
+                </a>
+                )
+              })}
             </div>
           </div>
         </div>
