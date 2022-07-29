@@ -330,6 +330,7 @@
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-attachment: fixed;
   color: transparent;
 }
@@ -481,6 +482,7 @@
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-attachment: fixed;
   color: transparent;
 }
@@ -614,8 +616,11 @@
 .contact {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
   background: url("/Website.png");
@@ -626,10 +631,13 @@
 .contactContent {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  width: 100%;
   align-items: center;
   margin: 15px;
   margin-top: 50px;
   max-width: 1100px;
+  min-height: calc(100% - 100px);
 }
 
 .contactContent h1 {
@@ -659,11 +667,6 @@
     font-size: 20pt;
   }
 }
-@media screen and (max-width: 750px) {
-  .contactContent p {
-    font-size: 14pt;
-  }
-}
 @media screen and (max-width: 400px) {
   .contactContent p {
     font-size: 13pt;
@@ -683,6 +686,10 @@
     font-size: 11pt;
   }
 }
+.contactContent a {
+  width: 40%;
+}
+
 .socialIcons {
   display: flex;
   flex-direction: row;
@@ -692,6 +699,91 @@
 
 .icon {
   margin: 15px;
+}
+
+.formContainer {
+  max-width: 500px;
+  height: min-content;
+  width: 90%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.formContainer h2 {
+  color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0b0c0c;
+}
+
+.formContainer span {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.formRow {
+  margin-top: 10px;
+}
+
+.formRow input:focus {
+  border: none;
+}
+
+.formRow button {
+  display: flex;
+  margin: auto;
+  height: 30px;
+  width: 30%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  background-color: #4a6ea1;
+  color: white;
+  border: none;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.toTop {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  align-self: flex-end;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.toTop p {
+  margin: 0px;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-bottom: 10px;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9pt;
 }
 
 /*# sourceMappingURL=Home.module.css.map */
