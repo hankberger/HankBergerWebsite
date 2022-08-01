@@ -181,14 +181,14 @@ const Home: NextPage = () => {
               
               <div className={styles.galleryGrid}>
                 <div className={styles.art}>
-                  <video src="/hairdance2.mp4" muted autoPlay loop/>
+                <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="/hairdance2.mp4" muted autoPlay loop playsInline/>'}}></div>
                   <div className={styles.cover}>
                     <h2>3D Art</h2>
                     {/* <p>View More</p> */}
                   </div>
                 </div>
                 <div className={styles.aiart}>
-                <video src="/ai2.mp4" muted autoPlay loop/>
+                  <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="/ai2.mp4" muted autoPlay loop playsInline/>'}}></div>
                   <div className={styles.cover}>
                     <h2>AI Art</h2>
                   </div>
