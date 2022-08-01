@@ -689,20 +689,20 @@
 }
 
 
-  .cover:hover{
-    animation-name: lighten;
-    animation-fill-mode: forwards;
-    animation-duration: .5s;
-  }
+  // .cover:hover{
+  //   animation-name: lighten;
+  //   animation-fill-mode: forwards;
+  //   animation-duration: .5s;
+  // }
   
-  @keyframes lighten {
-    0%{
-      opacity: 100%;
-    }
-    100%{
-      opacity: 0%;
-    }
-  }
+  // @keyframes lighten {
+  //   0%{
+  //     opacity: 100%;
+  //   }
+  //   100%{
+  //     opacity: 0%;
+  //   }
+  // }
 
 
 

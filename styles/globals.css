@@ -1,5 +1,6 @@
 html,
 body {
+  color: white;
   outline: 0;
   padding: 0;
   margin: 0;
@@ -17,7 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -26,6 +27,18 @@ a {
     background: black;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+ */
+
 
 input{
   background-color: rgba(30,30,30, .08);

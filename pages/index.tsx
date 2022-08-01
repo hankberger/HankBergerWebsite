@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,6 +9,8 @@ import getIcons from '../components/socialIcons'
 const Home: NextPage = () => {
   const [drawerState, setDrawer] = useState(false);
   const [drawerStyle, setStyle] = useState({display: 'none'});
+  const [messageSent, sentMessage] = useState(false);
+  const [messageStyle, setMessage] = useState({display: 'none'});
 
   const handleDrawer = () => {
     setDrawer((state) => !(state));
@@ -18,6 +20,16 @@ const Home: NextPage = () => {
       setStyle({display: 'flex'});
     }
     console.log(drawerStyle)
+  }
+
+  const handleSubmit = (event: any) => {
+     
+     sentMessage(true);
+     if(messageSent){
+      setMessage({display: 'none'});
+    }else{
+      setMessage({display: 'flex'});
+    }
   }
 
   return (
@@ -200,38 +212,40 @@ const Home: NextPage = () => {
               
             </div>
             <div className={styles.formContainer}>
-               <form>
+              <iframe name="dummyframe" id="dummyframe" style={{display: "none"}}></iframe>
+               <form action='/api/form' method='post' target="dummyframe" onSubmit={handleSubmit}>
                  <h2>Let&apos;s work together!</h2>
                  <div className={styles.formRow}>
                    <div className={styles.inputData}>
-                   <label htmlFor="">Name</label>
-                     <input type="text" required/>
+                   <label htmlFor="name">Name</label>
+                     <input type="text" id="name" name="name" required/>
                      <div className={styles.underline}></div>
                      
                    </div>
                  </div>
                  <div className={styles.formRow}>
                    <div className={styles.inputData}>
-                      <label htmlFor="">Email</label>
-                     <input type="email" required/>
+                      <label htmlFor="email">Email</label>
+                     <input type="email" id="email" name="email" required/>
                      <div className={styles.underline}></div>
                      
                    </div>
                  </div>
                  <div className={styles.formRow}>
                    <div className={styles.textArea}>
-                   <label htmlFor="">Message</label>
-                     <textarea rows={8} cols={80} required></textarea>
+                   <label htmlFor="message">Message</label>
+                     <textarea rows={8} cols={80} required id="message" name="message"></textarea>
                      <br/>
                      <div className={styles.underline}></div>
                      
                    </div>
                  </div>
-                 <span id="submitted">Your message has been sent!</span>
+                 <span id="submitted" style={messageStyle}>Your message has been sent!</span>
                  <div className={styles.formRow}>
                    <button type='submit'>Send</button>
                  </div>
                </form>
+               
             </div>
            
           </div>
