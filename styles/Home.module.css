@@ -42,6 +42,7 @@
   display: flex;
   height: 50px;
   width: 45px;
+  margin: 15px;
 }
 
 @media (min-width: 500px) {
@@ -99,7 +100,7 @@
   align-items: center;
   justify-content: center;
   width: 45px;
-  margin-top: 0px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -116,6 +117,12 @@
   color: rgba(39, 39, 39, 0.6);
 }
 
+.drawer a:hover {
+  animation-name: linkhoverorange;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
 .drawer svg {
   color: rgba(39, 39, 39, 0.28);
   position: relative;
@@ -127,6 +134,53 @@
   cursor: pointer;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  margin-top: auto;
+}
+
+.socialsicons {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.socialsicons svg {
+  color: rgba(39, 39, 39, 0.6);
+  margin: 7px;
+}
+
+.socialsicons svg:hover {
+  animation-name: linkhoverblue;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  margin: 7px;
+}
+
+@keyframes linkhoverblue {
+  0% {
+    color: rgba(39, 39, 39, 0.6);
+  }
+  100% {
+    color: #486ea1;
+  }
+}
+@keyframes linkhoverorange {
+  0% {
+    color: rgba(39, 39, 39, 0.6);
+  }
+  100% {
+    color: #e17600;
+  }
+}
 @keyframes drawerOpen {
   0% {
     right: -200px;
@@ -571,9 +625,18 @@
 }
 
 .cover h2 {
-  font-family: azo-sans-web, sans-serif;
-  font-weight: 500;
+  font-family: azo-sans-uber, sans-serif;
+  font-weight: 400;
   font-style: normal;
+  margin: 0;
+}
+
+.cover p {
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14pt;
+  text-decoration: underline;
   margin: 0;
 }
 
@@ -588,29 +651,12 @@
   animation-duration: 0.5s;
 }
 
-.art:hover {
-  animation-name: sink;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-
-.aiart:hover {
-  animation-name: sink;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes lighten {
   0% {
     opacity: 100%;
   }
   100% {
     opacity: 0%;
-  }
-}
-@keyframes sink {
-  100% {
-    transform: translateY(10px);
   }
 }
 .contact {

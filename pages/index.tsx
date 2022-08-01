@@ -59,9 +59,9 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.drawerContainer} onClick={handleDrawer} style={drawerStyle}>
             <div className={styles.drawer} >
-              <svg onClick={handleDrawer} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
+              {/* <svg onClick={handleDrawer} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-x-lg" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-              </svg>
+              </svg> */}
               <img src="/icondark.png" alt="Hank Berger logo"/>
               <a href='#home'>
                 Home
@@ -78,6 +78,17 @@ const Home: NextPage = () => {
               <a href='#contact'>
                 Contact
               </a>
+              <div className={styles.socials}>
+                {getIcons().map((icon:{name: string, link: string, html: string}, i: number)=>{
+                  return(
+                  <a key={i} href={icon.link} target='_blank' rel='noreferrer'>
+                    <div className={styles.socialsicons} dangerouslySetInnerHTML={{__html: icon.html}}>
+                      
+                    </div>
+                  </a>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </nav>
@@ -155,15 +166,17 @@ const Home: NextPage = () => {
         <div id='gallery' className={styles.gallery}>
           <div className={styles.galleryContent}>
               <h1>Gallery</h1>
+              
               <div className={styles.galleryGrid}>
                 <div className={styles.art}>
                   <video src="/hairdance2.mp4" muted autoPlay loop/>
                   <div className={styles.cover}>
                     <h2>3D Art</h2>
+                    {/* <p>View More</p> */}
                   </div>
                 </div>
                 <div className={styles.aiart}>
-                <video src="/ai.mp4" muted autoPlay loop/>
+                <video src="/ai2.mp4" muted autoPlay loop/>
                   <div className={styles.cover}>
                     <h2>AI Art</h2>
                   </div>
