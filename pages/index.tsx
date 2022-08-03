@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const [drawerState, setDrawer] = useState(false);
   const [drawerStyle, setStyle] = useState({display: 'none'});
   const [messageSent, sentMessage] = useState(false);
-  const [messageStyle, setMessage] = useState({display: 'none'});
+  const [messageStyle, setMessageStyle] = useState({display: 'none'});
 
   const handleDrawer = () => {
     setDrawer((state) => !(state));
@@ -23,12 +23,11 @@ const Home: NextPage = () => {
   }
 
   const handleSubmit = (event: any) => {
-     
      sentMessage(true);
      if(messageSent){
-      setMessage({display: 'none'});
+      setMessageStyle({display: 'none'});
     }else{
-      setMessage({display: 'flex'});
+      setMessageStyle({display: 'flex'});
     }
   }
 
@@ -57,8 +56,8 @@ const Home: NextPage = () => {
               <a href='#experience'>
                 Experience
               </a>
-              <a href='#gallery'>
-                Gallery
+              <a href='#art'>
+                Art
               </a>
               <a href='#contact'>
                 Contact
@@ -84,8 +83,8 @@ const Home: NextPage = () => {
               <a href='#experience'>
                 Experience
               </a>
-              <a href='#gallery'>
-                Gallery
+              <a href='#art'>
+                Art
               </a>
               <a href='#contact'>
                 Contact
@@ -175,24 +174,28 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div id='gallery' className={styles.gallery}>
+        <div id='art' className={styles.gallery}>
           <div className={styles.galleryContent}>
-              <h1>Gallery</h1>
+              <h1>Art</h1>
               
               <div className={styles.galleryGrid}>
-                <div className={styles.art}>
-                <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="/hairdance2.mp4" muted autoPlay loop playsInline/>'}}></div>
-                  <div className={styles.cover}>
-                    <h2>3D Art</h2>
-                    {/* <p>View More</p> */}
+                <Link href="/3d">
+                  <div className={styles.art}>
+                  <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="3d/hairdance2.mp4" muted autoPlay loop playsInline/>'}}></div>
+                    <div className={styles.cover}>
+                      <h2>3D Art</h2>
+                      {/* <p>View More</p> */}
+                    </div>
                   </div>
-                </div>
+                </Link>
+                <Link href="/ai">
                 <div className={styles.aiart}>
                   <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="/ai2.mp4" muted autoPlay loop playsInline/>'}}></div>
-                  <div className={styles.cover}>
-                    <h2>AI Art</h2>
-                  </div>
+                    <div className={styles.cover}>
+                      <h2>AI Art</h2>
+                    </div>
                 </div>
+                </Link>
               </div>
             </div>
         </div>
