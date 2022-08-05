@@ -19,7 +19,7 @@ const AI: NextPage = () => {
                     </h1>
                 </div>
                 <div className={styles.desc}>
-                    <p>Art created using artificial intelligence. I have a massive passion for combining art and technology wherever possible, and AI art has aboslutely amazed me recently. We're on the verge of a new era for art.</p>
+                    <p>Art created using artificial intelligence. I have a massive passion for combining art and technology wherever possible, and AI art has aboslutely amazed me recently. We&apos;re on the verge of a new era for art.</p>
                     
                     <Link href='/'>
                         <div className={styles.linkcontainer}><p>&#8592; Back to Home</p></div>
