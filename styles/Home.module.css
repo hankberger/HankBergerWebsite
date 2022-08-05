@@ -308,7 +308,7 @@
   font-style: normal;
   width: 75%;
   text-align: center;
-  font-size: 2.42vw;
+  font-size: 2.2vw;
 }
 
 @media screen and (min-width: 1100px) {
@@ -316,7 +316,7 @@
     font-size: 82pt;
   }
   .aboutcontent p {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 }
 @media screen and (max-width: 750px) {
@@ -329,25 +329,31 @@
     font-size: 13pt;
   }
 }
-@media screen and (max-height: 720px) {
-  .aboutcontent h1 {
-    font-size: 10vh;
-    margin: 0px;
-    padding: 0px;
-    line-height: 0.8em;
-  }
+@media screen and (max-height: 800px) {
   .aboutcontent img {
-    height: 120px;
+    height: 200px;
     width: auto;
     margin-top: 20px;
     border-radius: 50%;
     border: 2px solid white;
   }
   .aboutcontent p {
-    font-size: 11pt;
+    font-size: 13pt;
   }
   .aboutcontent a {
     font-size: 11pt;
+  }
+}
+@media screen and (max-height: 700px) {
+  .aboutcontent img {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .aboutcontent p {
+    font-size: 12pt;
   }
 }
 .experience {
@@ -380,7 +386,7 @@
   padding: 0px;
   line-height: 0.8em;
   color: black;
-  background-image: url("/Website.png");
+  background-image: url("/background.png");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -532,7 +538,7 @@
   padding: 0px;
   line-height: 0.8em;
   color: black;
-  background-image: url("/Website.png");
+  background-image: url("/background.png");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -660,7 +666,7 @@
   min-height: 100vh;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
-  background: url("/Website.png");
+  background: url("/background.png");
   background-size: cover;
   object-fit: contain;
 }
@@ -710,12 +716,6 @@
   }
 }
 @media screen and (max-height: 650px) {
-  .contactContent h1 {
-    font-size: 8vh;
-    margin: 0px;
-    padding: 0px;
-    line-height: 0.8em;
-  }
   .contactContent p {
     font-size: 11pt;
   }

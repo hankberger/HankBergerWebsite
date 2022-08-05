@@ -13,14 +13,13 @@ const AI: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.container}>
-            
                 <div className={styles.title}>
                     <h1>
                         AI ART
                     </h1>
                 </div>
                 <div className={styles.desc}>
-                    <p>Art created using artificial intelligence. I have a massive passion for combining art and technology wherever possible, and AI art has aboslutely amazed me recently. A new era of creativity has come.</p>
+                    <p>Art created using artificial intelligence. I have a massive passion for combining art and technology wherever possible, and AI art has aboslutely amazed me recently. We're on the verge of a new era for art.</p>
                     
                     <Link href='/'>
                         <div className={styles.linkcontainer}><p>&#8592; Back to Home</p></div>
@@ -28,28 +27,28 @@ const AI: NextPage = () => {
                 </div>
                 <div className={styles.gallery}>
                     <div className={styles.item}>
-                        <img src="ai/city1.png"></img>
+                        <img src="ai/city1.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/city2.png"></img>
+                        <img src="ai/city2.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/city3.png"></img>
+                        <img src="ai/city3.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/city4.png"></img>
+                        <img src="ai/city4.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/egomaniac.webp"></img>
+                        <img src="ai/ego1.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/egomaniac2.png"></img>
+                        <img src="ai/ego2.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/egomaniac3.png"></img>
+                        <img src="ai/ego3.webp"></img>
                     </div>
                     <div className={styles.item}>
-                        <img src="ai/egomaniac4.png"></img>
+                        <img src="ai/ego4.webp"></img>
                     </div>
                 </div>
             </div>
