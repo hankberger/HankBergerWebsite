@@ -386,7 +386,7 @@
   padding: 0px;
   line-height: 0.8em;
   color: black;
-  background-image: url("/background.png");
+  background-image: url("/background.webp");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -538,7 +538,7 @@
   padding: 0px;
   line-height: 0.8em;
   color: black;
-  background-image: url("/background.png");
+  background-image: url("/background.webp");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -666,7 +666,7 @@
   min-height: 100vh;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
-  background: url("/background.png");
+  background: url("/background.webp");
   background-size: cover;
   object-fit: contain;
 }
@@ -821,6 +821,34 @@
   font-weight: 300;
   font-style: normal;
   font-size: 9pt;
+}
+
+.fadeLeft {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.fadeLeft2 {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: fadeInFromLeft 1s forwards 0.1s;
+}
+
+.fadeLeft3 {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  animation: fadeInFromLeft 1s forwards 0.3s;
+}
+
+@keyframes fadeInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=Home.module.css.map */
