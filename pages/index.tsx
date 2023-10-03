@@ -34,9 +34,19 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Hank Berger - Software Developer</title>
+        <meta name="charset" content="utf-8"/>
         <meta name="description" content="Frontend developer and artist. Focused on delivering quality engineering alongside great design." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="Hank Berger, Software, 3D Art, Web Development, Developer"/>
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Facebook OpenGraph */}
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.hankberger.com"/>
+        <meta property="og:title" content="Hank Berger - Software Developer"/>
+        <meta property="og:description" content="Software Developer focused on delivering quality engineering alongside great design."/>
+        <meta property="og:image" content="https://hankberger.com/background.webp"/>
+
       </Head>
 
       <main className={styles.main}>
@@ -114,8 +124,8 @@ const Home: NextPage = () => {
             <h1>About</h1>
             <img draggable='false' src="/hankberger.webp" alt="A professional headshot of Hank Berger."/>
             <a href='https://drive.google.com/file/d/1AHmQBI_zATwpxUFLofD9318Q30n2dTCS/view?usp=sharing' target='_blank' rel='noreferrer'>resume</a>
-            <p>Hi! I&apos;m Hank, a front-end developer and digital artist interested in building online products with cutting-edge technology and great design. Recently, I've been focused on healthcare tech within the patient experience realm.</p>
-            <p>My technology experience focuses on applications, having built both websites and mobile applications to solve problems. I strive to make every experience a joy to use, and I'm always looking for a new challenge!</p>
+            <p>Hi! I&apos;m Hank, a front-end developer and digital artist interested in building online products with cutting-edge technology and great design. Recently, I&apos;ve been focused on healthcare tech within the patient experience realm.</p>
+            <p>My technology experience focuses on applications, having built both websites and mobile applications to solve problems. I strive to make every experience a joy to use, and I&apos;m always looking for a new challenge!</p>
             {/* <p>I'm a recent computer science graduate from the University of Minnesota, if you want to learn more about me you can find my resume here. Feel free to get in contact with me through the form below.</p> */}
           </div>
         </div>
