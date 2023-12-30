@@ -71,7 +71,7 @@ const Projects: NextPage = () => {
                     </div>
                     <div className={styles.item}>
                             <div className={styles.headerImage}>
-                                <img className={styles.background} src='droneSim.png' alt="Background art for Hank Berger's portfilio website."/>
+                                <img className={styles.background} src='droneSIm.png' alt="Background art for Hank Berger's portfilio website."/>
                             </div>
                             <div className={styles.bio}>
                                 <div>
