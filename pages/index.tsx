@@ -123,7 +123,7 @@ const Home: NextPage = () => {
           <div className={styles.aboutcontent}>
             <h1>About</h1>
             <img draggable='false' src="/hankberger.webp" alt="A professional headshot of Hank Berger."/>
-            <a href='https://drive.google.com/file/d/1AHmQBI_zATwpxUFLofD9318Q30n2dTCS/view?usp=sharing' target='_blank' rel='noreferrer'>resume</a>
+            <a href='https://drive.google.com/file/d/1L6Xw5OJCO2oAN9t3Fq-XiM6l81Sj5buD/view?usp=sharing' target='_blank' rel='noreferrer'>resume</a>
             <p>Hi! I&apos;m Hank, a front-end developer and 3D digital artist interested in building online products with cutting-edge technology and great design. Recently, I&apos;ve been focused on healthcare tech within the patient experience realm.</p>
             <p>My technology experience focuses on applications, having built both websites and mobile applications to solve problems. I strive to make every experience a joy to use, and I&apos;m always looking for a new challenge!</p>
           </div>
