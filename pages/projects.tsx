@@ -39,10 +39,10 @@ const Projects: NextPage = () => {
                                 </div>
                                
                                 <div className={styles.buttonBox}>
-                                    <a href='https://hankberger.github.io/PathPlanningThreeJS/' target="_blank">
+                                    <a href='https://hankberger.github.io/PathPlanningThreeJS/' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Try it out</button>
                                     </a>
-                                    <a href='https://github.com/hankberger/PathPlanningThreeJS' target="_blank">
+                                    <a href='https://github.com/hankberger/PathPlanningThreeJS' target="_blank"  rel="noreferrer">
                                         <button className={styles.secondaryAction} >Github</button>
                                     </a>                        
                                 </div>
@@ -60,10 +60,10 @@ const Projects: NextPage = () => {
                                 </div>
                                
                                 <div className={styles.buttonBox}>
-                                    <a href='https://hankberger.github.io/FinalProject5611/' target="_blank">
+                                    <a href='https://hankberger.github.io/FinalProject5611/' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Try it out</button>
                                     </a>
-                                    <a href='https://github.com/hankberger/FinalProject5611' target="_blank">
+                                    <a href='https://github.com/hankberger/FinalProject5611' target="_blank"  rel="noreferrer">
                                         <button className={styles.secondaryAction} >Github</button>
                                     </a>                        
                                 </div>
@@ -81,7 +81,7 @@ const Projects: NextPage = () => {
                                 </div>
                                
                                 <div className={styles.buttonBox}>
-                                    <a href='https://drive.google.com/file/d/1MNlMztNS_Hcpb1Dwq1mXF-oHNuqqlHRg/view?usp=sharing' target="_blank">
+                                    <a href='https://drive.google.com/file/d/1MNlMztNS_Hcpb1Dwq1mXF-oHNuqqlHRg/view?usp=sharing' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Watch Video</button>
                                     </a> 
                                     <a href='/projects'>
@@ -102,7 +102,7 @@ const Projects: NextPage = () => {
                                 </div>
                                
                                 <div className={styles.buttonBox}>
-                                    <a href='https://drive.google.com/file/d/1eSt7ErQE9sCcDrLD3VkdVEBvWdk1KSdy/view?usp=sharing' target="_blank">
+                                    <a href='https://drive.google.com/file/d/1eSt7ErQE9sCcDrLD3VkdVEBvWdk1KSdy/view?usp=sharing' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Watch Video</button>
                                     </a> 
                                     <a href='/projects'>
