@@ -84,9 +84,8 @@ const Projects: NextPage = () => {
                                     <a href='https://drive.google.com/file/d/1MNlMztNS_Hcpb1Dwq1mXF-oHNuqqlHRg/view?usp=sharing' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Watch Video</button>
                                     </a> 
-                                    <a href='/projects'>
-                                       
-                                    </a>                       
+                                    <div>
+                                    </div>                   
                                 </div>
                             </div>
                     </div>
@@ -105,9 +104,8 @@ const Projects: NextPage = () => {
                                     <a href='https://drive.google.com/file/d/1eSt7ErQE9sCcDrLD3VkdVEBvWdk1KSdy/view?usp=sharing' target="_blank"  rel="noreferrer">
                                         <button className={styles.primaryAction} >Watch Video</button>
                                     </a> 
-                                    <a href='/projects'>
-                                       
-                                    </a>                       
+                                    <div>
+                                        </div>               
                                 </div>
                             </div>
                     </div>
