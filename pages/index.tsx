@@ -65,7 +65,7 @@ const Home: NextPage = () => {
               <a href='#experience'>
                 Experience
               </a>
-              <a href='#art'>
+              <a href='#showcase'>
                 Showcase
               </a>
               <a href='#contact'>
@@ -92,8 +92,8 @@ const Home: NextPage = () => {
               <a href='#experience'>
                 Experience
               </a>
-              <a href='#art'>
-                Art
+              <a href='#showcase'>
+                Showcase
               </a>
               <a href='#contact'>
                 Contact
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div id='art' className={styles.gallery}>
+        <div id='showcase' className={styles.gallery}>
           <div className={styles.galleryContent}>
               <h1>Showcase</h1>
               
@@ -213,7 +213,7 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </Link>
-                <Link href="/ai">
+                <Link href="/projects">
                 <div className={styles.aiart}>
                   <div className={styles.vidContainer} dangerouslySetInnerHTML={{__html: '<video src="/stormy.mp4" muted autoPlay loop playsInline/>'}}></div>
                     <div className={styles.cover}>

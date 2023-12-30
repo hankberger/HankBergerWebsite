@@ -19,8 +19,8 @@ const ThreeD: NextPage = () => {
                     </h1>
                 </div>
                 <div className={styles.desc}>
-                    <p>3D Animation using Cinema4D, Redshift, Adobe After Effects, and Adobe Premiere. Commissions currently not open.</p>
-                    <Link href='/'>
+                    <p>3D animation using mostly procedural generation and simulation. Most common tools are Cinema4D, Unreal Engine 5, Houdini and Adobe After Effects.</p>
+                    <Link href='/#showcase'>
                         <div className={styles.linkcontainer}><p>&#8592; Back to Home</p></div>
                     </Link>
                 </div>
