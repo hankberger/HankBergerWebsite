@@ -650,9 +650,9 @@
   margin: 0;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 700px) {
   .cover h2 {
-    font-size: 82pt;
+    font-size: 4rem;
   }
 }
 .contact {
