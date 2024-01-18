@@ -20,7 +20,7 @@ const Projects: NextPage = () => {
                     </h1>
                 </div>
                 <div className={styles.desc}>
-                    <p>A showcase of my favorite coding projects; mostly 3D stuff done in the web and Unreal Engine. Common tools are TypeScript, React, SASS, and C++. </p>
+                    <p>A showcase of my favorite coding projects; mostly 3D stuff done in the web and Unreal Engine. Common tools are TypeScript, React, Three.js, SASS, and C++. </p>
                     
                     <Link href='/#showcase'>
                         <div className={styles.linkcontainer}><p>&#8592; Back to Home</p></div>
