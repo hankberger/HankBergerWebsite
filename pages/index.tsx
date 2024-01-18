@@ -193,7 +193,7 @@ const Home: NextPage = () => {
                   </h3>
                 </div>
                 <div className={styles.expDesc}>
-                  <p>Research Assistant for Digital Arts, Sciences, and Humanities (DASH). The main goal was to assist humanities researchers utilize technology in their research. Main tasks included data visulization using Python and website development for research teams.</p>
+                  <p>Research Assistant for Digital Arts, Sciences, and Humanities (DASH). The main goal was to assist humanities researchers utilize technology in their research. Main tasks included data visualization using Python and website development for research teams.</p>
                 </div>
               </div>
             </div>
