@@ -29,13 +29,7 @@ const ThreeD: NextPage = () => {
                         <video src="3d/lastwords.mp4" autoPlay muted controls loop playsInline></video>
                     </div>
                     <div className={styles.item}>
-                        <video src="3d/DesertWithSound.mp4" autoPlay muted controls loop playsInline></video>
-                    </div>
-                    <div className={styles.item}>
                         <video src="3d/fancyclown.mp4" autoPlay muted controls loop playsInline></video>
-                    </div>
-                    <div className={styles.item}>
-                        <video src="3d/scalecube.mp4" autoPlay muted controls loop playsInline></video>
                     </div>
                     <div className={styles.item}>
                         <video src="3d/tree1.mp4" autoPlay muted controls loop playsInline></video>
