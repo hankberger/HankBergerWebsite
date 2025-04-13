@@ -5,6 +5,7 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  output: 'export', 
 }
 
 module.exports = nextConfig
